@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main class="content">
+        <div class="view">
+            <label for="result">Resultado</label> 
+            <input type="text" id="result" placeholder="Aqui aparecerá o resultado." readonly>
+        </div>
+
+        <div class="buttons">
+            <div class="teclas">
+                <button onclick="clearDisplay()" aria-label="Limpar tela">C</button>
+                <button onclick="deleteLast()" aria-label="Apagar último caractere">←</button>
+                <button onclick="appendOperator('%')" aria-label="Operador módulo">%</button>
+                <button class="operator" onclick="appendOperator('/')" aria-label="Operador divisão">/</button>
+                
+                <button onclick="appendNumber('7')" aria-label="Número 7">7</button>
+                <button onclick="appendNumber('8')" aria-label="Número 8">8</button>
+                <button onclick="appendNumber('9')" aria-label="Número 9">9</button>
+                <button class="operator" onclick="appendOperator('*')" aria-label="Operador multiplicação">*</button>
+                
+                <button onclick="appendNumber('4')" aria-label="Número 4">4</button>
+                <button onclick="appendNumber('5')" aria-label="Número 5">5</button>
+                <button onclick="appendNumber('6')" aria-label="Número 6">6</button>
+                <button class="operator" onclick="appendOperator('-')" aria-label="Operador subtração">-</button>
+                
+                <button onclick="appendNumber('1')" aria-label="Número 1">1</button>
+                <button onclick="appendNumber('2')" aria-label="Número 2">2</button>
+                <button onclick="appendNumber('3')" aria-label="Número 3">3</button>
+                <button class="operator" onclick="appendOperator('+')" aria-label="Operador soma">+</button>
+                
+                <button onclick="appendNumber('0')" aria-label="Número 0">0</button>
+                <button onclick="appendNumber('.')" aria-label="Ponto decimal">.</button>
+                <button class="equals" onclick="calculate()" aria-label="Calcular resultado">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="src/logica.js"></script>
+</body>
+
+</html>
