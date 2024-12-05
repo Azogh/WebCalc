@@ -1,0 +1,88 @@
+/* Fundo geral */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Área principal */
+.content {
+    width: 320px; /* Largura da calculadora */
+    background-color: #1a1a1a; /* Fundo da calculadora */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Display da calculadora */
+.view {
+    background-color: #333; /* Fundo do display */
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.view input {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+}
+
+/* Botões */
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas uniformes */
+    gap: 10px; /* Espaçamento entre os botões */
+    padding: 10px;
+}
+
+/* Botões padrão (números e outros) */
+.teclas button {
+    font-size: 1.5rem;
+    padding: 20px; /* Aumenta o tamanho interno dos botões */
+    color: #fff;
+    background-color: #444; /* Cinza para números e botões padrões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botões ao passar o mouse */
+.teclas button:hover {
+    background-color: #666;
+}
+
+/* Botões de operações (verde) */
+.teclas button.operator {
+    background-color: #2ecc71; /* Verde */
+}
+
+.teclas button.operator:hover {
+    background-color: #27ae60;
+}
+
+/* Botão de '=' ocupa dois espaços */
+.teclas button.equals {
+    background-color: #16a085; /* Verde mais escuro */
+    grid-column: span 2; /* Ocupa duas colunas */
+    text-align: center;
+}
+
+.teclas button.equals:hover {
+    background-color: #0e7c64;
+}
+
+/* Ajustando a altura dos botões */
+.teclas button {
+    height: calc((320px - 50px) / 5); /* Divide a altura da calculadora proporcionalmente */
+}
