@@ -1,22 +1,27 @@
 # WebCalc
 
-**WebCalc** é uma calculadora básica desenvolvida com **HTML**, **CSS**, e **JavaScript**. O projeto é ideal para quem está aprendendo os fundamentos de programação front-end e quer entender como criar uma aplicação funcional para cálculos matemáticos simples.
+**WebCalc** é uma calculadora básica desenvolvida com **HTML**, **CSS**, e **JavaScript**. Este projeto é ideal para quem está aprendendo os fundamentos de programação front-end e deseja entender como criar uma aplicação funcional para cálculos matemáticos simples.
 
-## Funcionalidades
+## 💻 Preview
 
-- Operações básicas: **soma**, **subtração**, **multiplicação**, e **divisão**.
-- Interface intuitiva e responsiva.
-- Limpeza do visor com um botão "C".
-- Design minimalista e funcional.
+Veja a calculadora em ação: [Clique aqui para acessar o preview](https://azogh.github.io/WebCalc/)
 
-## Tecnologias Utilizadas
+## ✨ Funcionalidades
 
-- **HTML5**: Estrutura do projeto.
-- **CSS3**: Estilização da interface.
-- **JavaScript**: Lógica e funcionalidade.
+- **Operações básicas**: Adição, subtração, multiplicação e divisão.
+- **Botão "C"**: Limpa o visor e reinicia os cálculos.
+- **Interface intuitiva**: Fácil de usar e amigável.
+- **Responsividade**: Funciona bem em diferentes tamanhos de tela.
+- **Design minimalista**: Focado na simplicidade e funcionalidade.
 
-## Como Utilizar
+## 🔧 Tecnologias Utilizadas
 
-1. **Clone o repositório**:
+- **HTML5**: Estrutura da aplicação.
+- **CSS3**: Estilização e layout da interface.
+- **JavaScript**: Implementação da lógica de cálculos e interatividade.
+
+## 🚀 Como Utilizar
+
+1. **Clone este repositório**:
    ```bash
    git clone https://github.com/Azogh/WebCalc.git
